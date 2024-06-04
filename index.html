@@ -58,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGl.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGl.data.gz",
-        frameworkUrl: buildUrl + "/WebGl.framework.js.gz",
-        codeUrl: buildUrl + "/WebGl.wasm.gz",
+        dataUrl: buildUrl + "/WebGl.data",
+        frameworkUrl: buildUrl + "/WebGl.framework.js",
+        codeUrl: buildUrl + "/WebGl.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "VedantaTeam",
         productName: "Tantrix",
@@ -82,6 +82,7 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
+	  
         canvas.style.width = "600px";
         canvas.style.height = "960px";
       }
